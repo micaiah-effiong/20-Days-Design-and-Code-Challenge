@@ -1,0 +1,115 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	/*background-color: black;*/
+	font-size: 6vmin;
+}
+
+img{
+	width: 100%;
+	transition: .3s;
+	border-radius: 5px;
+}
+
+img:active, button:active{
+	box-shadow: 0px 8px 3px black;
+	transition: .3s;
+}
+
+.play-ground, .intro{
+	width: 100%;
+	height: 100vh;
+}
+
+.play-ground{
+	background-image: url(../img/fields2.png);
+	background-size: cover;
+	background-position: center center;
+}
+
+.mid-elt{
+	margin: 0 auto;
+	display: block;
+}
+
+button{
+	border-radius: 4px;
+	border-style: solid;
+	font-size: 5vmin;
+	padding: 5px;
+	margin: 14px;
+	background-color: #ffffff88;
+	/*border-color: transparent;*/
+	transition: .3s;
+}
+
+.cent-elt{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.intro{
+	background-image: url(../img/welcomebg.png);
+	background-size: cover;
+	background-position: center center;
+	position: relative;
+}
+
+.hide{
+	display: none;
+}
+
+.show{
+	display: block;
+}
+
+.choice-div{
+	display: flex;
+	margin: auto;
+	width: 80%;
+	position: relative;
+	bottom: 3px;
+}
+
+.choice{
+	height: 100%;
+	width: 33.33%;
+	margin: 0 4px;
+	/*float: left;*/
+}
+
+.area{
+	padding: 15px;
+	height: 65%;
+	width: 60%;
+	border-radius: 2px;
+    box-shadow: 0 0 4px 1px black;
+}
+
+.score-board{
+	display: flex;
+}
+
+.score-board>div{
+	width: 70%;
+	margin: auto;
+	text-align: center;
+}
+
+.status{
+	content: "Ready";
+	/*font-size: 19vmax;*/
+	text-align: center;
+	height: 40%;
+	transition : ".7s";
+}
+/*@keyframes fade-in{
+
+}*/
+
+/*.reset>div{
+	width: 100%;
+}*/

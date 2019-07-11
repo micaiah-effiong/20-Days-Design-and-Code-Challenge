@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<meta charset="utf-8">
+
+</head>
+<body>
+	<main>
+		<!-- <img src="img/paper.svg"> -->
+		<div class="intro" id="intro">
+			<div class="cent-elt">
+				Welcome to <span>RPS</span> 
+				<div>
+					<button type="button" onclick="swapPage('intro', 'playGround')" class="mid-elt"> start </button>
+				</div>
+			</div>
+			
+			
+		</div>
+
+		<div class="play-ground" id="playGround">
+			<button type="button" onclick="swapPage('playGround', 'intro')">Exit</button>
+			<!-- <div class="reset"> -->
+					<button type="button" onclick="weep()">Reset</button>
+				<!-- </div> -->
+
+			<div class="cent-elt area" id="area">
+				<div class="score-board ">
+					<div id="hScore"></div>
+					<div id="aiScore"></div>
+				</div>
+				
+				<div id="status" class="status"></div>
+				
+				<div class="choice-div">
+					<div title="rock" class="choice">
+						<img src="img/rock.svg" onclick="pickOption('r'), game()">
+					</div>
+
+					<div title="paper" class="choice">
+						<img src="img/paper.svg" onclick="pickOption('p'), game()">
+					</div>
+
+					<div title="scissors" class="choice">
+							<img src="img/scissors.svg" onclick="pickOption('s'), game()">
+					</div>
+				</div>
+
+
+
+			</div>
+
+
+
+			
+		</div>
+	</main>
+	<script type="text/javascript" src="js/game.js"></script>
+</body>
+</html>
